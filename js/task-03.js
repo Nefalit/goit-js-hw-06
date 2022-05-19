@@ -21,6 +21,6 @@ function makeImg({ url, alt } = {}) {
 </li>`;
 }
 
-const imgArr = images.map(el => makeImg(el));
+const imgArr = images.map((el) => makeImg(el)).join("");
 
-galleryEl.insertAdjacentHTML('afterbegin', imgArr.join(''));
+galleryEl.insertAdjacentHTML('afterbegin', imgArr);
